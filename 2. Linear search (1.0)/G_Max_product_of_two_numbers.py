@@ -1,15 +1,4 @@
-# arr = list(map(int, input().split()))
-
-# text = "12288 -10075 29710 15686 -18900 -17715 15992 24431"
-# arr = list(map(int, text.split()))
-
-# arr = [4, 3, 5, 2, 5]
-# arr = [-4, 3, -5, 2, 5]
-arr = [1, -1]
-
-
 def find_two_maximums(arr):
-
     max1 = max(arr[0], arr[1])
     max2 = min(arr[0], arr[1])
 
@@ -48,6 +37,20 @@ def max_product_of_two(arr):
         return -max_neg1, -max_neg2
 
 
-result = max_product_of_two(arr)
-nums_string = " ".join(map(str, result))
-print(nums_string)
+if __name__ == "__main__":
+    arr = list(map(int, input().split()))
+
+    # 5 5
+    # arr = [4, 3, 5, 2, 5]
+
+    # -5 -4
+    # arr = [-4, 3, -5, 2, 5]
+
+    # -1 1
+    # arr = [1, -1]
+
+    # 24431 29710
+    # arr = [12288, -10075, 29710, 15686, -18900, -17715, 15992, 24431]
+
+    result = max_product_of_two(arr)
+    print(*result)

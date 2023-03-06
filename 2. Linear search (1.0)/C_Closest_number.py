@@ -1,14 +1,3 @@
-# n = input()
-# arr = list(map(int, input().split()))
-# x = int(input())
-
-arr = [1, 2, 3, 4, 5]
-x = 6
-
-# arr = [5, 4, 3, 2, 1]
-# x = 3
-
-
 def find_closest_number(arr, x):
     closest = arr[0]
     min_difference = abs(x - closest)
@@ -23,4 +12,17 @@ def find_closest_number(arr, x):
     return closest
 
 
-print(find_closest_number(arr, x))
+if __name__ == "__main__":
+    n = input()
+    arr = list(map(int, input().split()))
+    x = int(input())
+
+    # 5
+    # arr = [1, 2, 3, 4, 5]
+    # x = 6
+
+    # 3
+    # arr = [5, 4, 3, 2, 1]
+    # x = 3
+
+    print(find_closest_number(arr, x))

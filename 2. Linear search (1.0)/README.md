@@ -1,0 +1,1 @@
+[Контест №2 для тренировок 1.0 по теме "Линейный поиск"](https://contest.yandex.ru/contest/27472/problems/)

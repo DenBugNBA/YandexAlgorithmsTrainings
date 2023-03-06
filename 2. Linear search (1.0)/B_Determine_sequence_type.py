@@ -9,20 +9,6 @@ WEAKLY DESCENDING – последовательность является не
 RANDOM – последовательность не принадлежит ни к одному из вышеупомянутых типов
 """
 
-# arr = []
-# num = int(input())
-# while num != -2000000000:
-#     arr.append(num)
-#     num = int(input())
-
-# arr = [-530, -530, -530, -530, -530]  # CONSTANT
-# arr = [5, 4, 3, 2, 1]  # DESCENDING
-# arr = [5, 4, 4, 2, 1]  # WEAKLY DESCENDING
-# arr = [1, 2, 3, 4, 5]  # ASCENDING
-# arr = [1, 2, 3, 3, 5]  # WEAKLY ASCENDING
-# arr = [1, 5, 3, 2, 4]  # RANDOM
-arr = []
-
 
 def determine_sequence_type(arr):
     if not arr:
@@ -61,4 +47,32 @@ def determine_sequence_type(arr):
     return "RANDOM"
 
 
-print(determine_sequence_type(arr))
+if __name__ == "__main__":
+    arr = []
+    num = int(input())
+    while num != -2000000000:
+        arr.append(num)
+        num = int(input())
+
+    # CONSTANT
+    # arr = [-530, -530, -530, -530, -530]
+
+    # DESCENDING
+    # arr = [5, 4, 3, 2, 1]
+
+    # WEAKLY DESCENDING
+    # arr = [5, 4, 4, 2, 1]
+
+    # ASCENDING
+    # arr = [1, 2, 3, 4, 5]
+
+    # WEAKLY ASCENDING
+    # arr = [1, 2, 3, 3, 5]
+
+    #  RANDOM
+    # arr = [1, 5, 3, 2, 4]
+
+    # RANDOM
+    # arr = []
+
+    print(determine_sequence_type(arr))

@@ -1,11 +1,3 @@
-# n = input()
-# arr = list(map(int, input().split()))
-
-arr = [10, 20, 15, 10, 30, 5, 1]
-# arr = [15, 15, 10]
-# arr = [10, 15, 20]
-
-
 def max_place(arr):
     index_max = 0
     max_distance = arr[0]
@@ -38,4 +30,17 @@ def max_place(arr):
     return place
 
 
-print(max_place(arr))
+if __name__ == "__main__":
+    n = input()
+    arr = list(map(int, input().split()))
+
+    # 6
+    # arr = [10, 20, 15, 10, 30, 5, 1]
+
+    # 1
+    # arr = [15, 15, 10]
+
+    # 0
+    # arr = [10, 15, 20]
+
+    print(max_place(arr))

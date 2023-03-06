@@ -1,19 +1,3 @@
-# n, m, k = map(int, input().split())
-# bombs = []
-# for _ in range(k):
-#     x, y = map(int, input().split())
-#     bombs.append((x, y))
-
-# n, m, k = 3, 2, 2
-# bombs = [(1, 1), (2, 2)]
-
-# n, m, k = 2, 2, 0
-# bombs = []
-
-n, m, k = 4, 4, 4
-bombs = [(1, 3), (2, 1), (4, 2), (4, 4)]
-
-
 def create_sapper_field(n, m, k, bombs):
     field = []
 
@@ -55,7 +39,38 @@ def create_sapper_field(n, m, k, bombs):
     return field
 
 
-field = create_sapper_field(n, m, k, bombs)
-for line in field:
-    res = " ".join(map(str, line))
-    print(res)
+if __name__ == "__main__":
+    n, m, k = map(int, input().split())
+    bombs = []
+    for _ in range(k):
+        x, y = map(int, input().split())
+        bombs.append((x, y))
+
+    """
+    * 2
+    2 *
+    1 1
+    """
+    # n, m, k = 3, 2, 2
+    # bombs = [(1, 1), (2, 2)]
+
+    """
+    0 0
+    0 0
+    """
+    # n, m, k = 2, 2, 0
+    # bombs = []
+
+    """
+    1 2 * 1
+    * 2 1 1
+    2 2 2 1
+    1 * 2 *
+    """
+    # n, m, k = 4, 4, 4
+    # bombs = [(1, 3), (2, 1), (4, 2), (4, 4)]
+
+    field = create_sapper_field(n, m, k, bombs)
+
+    for line in field:
+        print(*line)
