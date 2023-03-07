@@ -1,0 +1,1 @@
+[Контест №8 для тренировок 2.0 дивизиона B по теме "Деревья"](https://contest.yandex.ru/contest/29403/problems/)

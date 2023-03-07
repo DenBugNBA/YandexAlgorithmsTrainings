@@ -1,0 +1,1 @@
+[Контест №3 для тренировок 2.0 дивизиона B по теме "Множества"](https://contest.yandex.ru/contest/28964/problems/)

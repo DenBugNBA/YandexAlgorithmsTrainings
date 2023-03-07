@@ -1,0 +1,1 @@
+[Контест №8 для тренировок 1.0 по теме "Деревья"](https://contest.yandex.ru/contest/28069/problems/)

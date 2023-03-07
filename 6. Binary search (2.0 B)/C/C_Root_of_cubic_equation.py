@@ -1,21 +1,20 @@
 def check_greater_equal_zero(num, params):
     a, b, c, d = params
     expression = a * num**3 + b * num**2 + c * num + d
-    # print(expression, "- expression")
+
     if a < 0:
         return expression <= 0
     return expression >= 0
 
 
 def binary_search(left, right, eps, check, params):
-    # print(left, right)
     while left + eps < right:
         m = (left + right) / 2
         if check(m, params):
             right = m
         else:
             left = m + eps
-        # print(left, right)
+
     return left
 
 

@@ -1,0 +1,1 @@
+[Контест №6 для тренировок 1.0 по теме "Бинарный поиск"](https://contest.yandex.ru/contest/27844/problems/)

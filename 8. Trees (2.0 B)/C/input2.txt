@@ -1,0 +1,4 @@
+3
+ba a
+c a
+ba ba
