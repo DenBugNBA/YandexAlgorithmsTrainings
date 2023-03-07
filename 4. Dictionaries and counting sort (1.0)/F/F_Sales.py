@@ -1,8 +1,3 @@
-lines = []
-with open("input.txt") as f:
-    lines = f.readlines()
-
-
 def output_customers(lines):
     customers = {}
     for line in lines:
@@ -19,4 +14,9 @@ def output_customers(lines):
             print(f"{product} {customers[customer][product]}")
 
 
-output_customers(lines)
+if __name__ == "__main__":
+    lines = []
+    with open("input.txt") as f:
+        lines = f.readlines()
+
+    output_customers(lines)

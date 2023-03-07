@@ -32,22 +32,28 @@ def count_mistakes(text):
     return mistakes_count
 
 
-# n = int(input())
-# dictionary = {}
-# for _ in range(n):
-#     word = input()
-#     word_lower = word.lower()
-#     if word_lower not in dictionary:
-#         dictionary[word_lower] = []
-#     index = find_emphasis_index(word)
-#     dictionary[word_lower].append(index)
-# text = input()
+if __name__ == "__main__":
+    n = int(input())
+    dictionary = {}
+    for _ in range(n):
+        word = input()
+        word_lower = word.lower()
+        if word_lower not in dictionary:
+            dictionary[word_lower] = []
+        index = find_emphasis_index(word)
+        dictionary[word_lower].append(index)
+    text = input()
 
-dictionary = {"cannot": [1, 4], "found": [1], "page": [1]}
-# text = "thE pAge cAnnot be found"  # 2
-text = "The PAGE cannot be found"  # 4
+    # 2
+    # dictionary = {"cannot": [1, 4], "found": [1], "page": [1]}
+    # text = "thE pAge cAnnot be found"
 
-# dictionary = {}
-# text = "Aa a"
+    # 4
+    # dictionary = {"cannot": [1, 4], "found": [1], "page": [1]}
+    # text = "The PAGE cannot be found"
 
-print(count_mistakes(text))
+    # 1
+    # dictionary = {}
+    # text = "Aa a"
+
+    print(count_mistakes(text))

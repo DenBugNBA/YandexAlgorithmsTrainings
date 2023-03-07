@@ -6,14 +6,6 @@ s - последовательность
 """
 
 
-# w_len, s_len = map(int, input().split())
-# w = input()
-# s = input()
-
-w = "cAda"
-s = "AbrAcadAbRa"
-
-
 def count_possible_entries(w, s):
     pattern = Counter(w)
     pattern_len = len(w)
@@ -41,4 +33,13 @@ def count_possible_entries(w, s):
     return count
 
 
-print(count_possible_entries(w, s))
+if __name__ == "__main__":
+    w_len, s_len = map(int, input().split())
+    w = input()
+    s = input()
+
+    # 2
+    # w = "cAda"
+    # s = "AbrAcadAbRa"
+
+    print(count_possible_entries(w, s))

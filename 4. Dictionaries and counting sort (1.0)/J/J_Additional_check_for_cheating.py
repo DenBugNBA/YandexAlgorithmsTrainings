@@ -1,9 +1,7 @@
 from string import ascii_letters, digits
 
-available_characters = ascii_letters + digits + "_"
 
-
-def parse_lines(lines, c):
+def parse_lines(lines, c, available_characters):
     words = []
 
     for line in lines:
@@ -70,24 +68,26 @@ def find_most_frequent_identifier(identifiers, words):
                 return word
 
 
-with open("input.txt") as f:
-    # n - число ключевых слов
-    # c - чувствительны к регистру
-    # d - идентификаторы могут начинаться с цифры
+if __name__ == "__main__":
+    with open("input.txt") as f:
+        # n - число ключевых слов
+        # c - чувствительны к регистру
+        # d - идентификаторы могут начинаться с цифры
+        n, c, d = f.readline().split()
+        keywords = []
 
-    n, c, d = f.readline().split()
-    keywords = []
+        for _ in range(int(n)):
+            keyword = f.readline().strip()
 
-    for _ in range(int(n)):
-        keyword = f.readline().strip()
+            if c == "no":
+                keywords.append(keyword.lower())
+            else:
+                keywords.append(keyword)
 
-        if c == "no":
-            keywords.append(keyword.lower())
-        else:
-            keywords.append(keyword)
+        lines = f.readlines()
 
-    lines = f.readlines()
+    available_characters = ascii_letters + digits + "_"
 
-words = parse_lines(lines, c)
-identifiers = count_identifiers(words, d, keywords)
-print(find_most_frequent_identifier(identifiers, words))
+    words = parse_lines(lines, c, available_characters)
+    identifiers = count_identifiers(words, d, keywords)
+    print(find_most_frequent_identifier(identifiers, words))

@@ -1,14 +1,3 @@
-# lines = []
-# with open("input.txt") as f:
-#     lines = f.readlines()
-
-lines = ["q w e r t y u i o p", "a s d f g h j k l" "z x c v b n m"]
-
-# text = "apple orange banana banana orange"
-
-# text = "oh you touch my tralala mmm my ding ding dong"
-
-
 def find_most_frequent_word(lines):
     words_count = {}
 
@@ -31,4 +20,18 @@ def find_most_frequent_word(lines):
     return max_word
 
 
-print(find_most_frequent_word(lines))
+if __name__ == "__main__":
+    lines = []
+    with open("input.txt") as f:
+        lines = f.readlines()
+
+    # banana
+    # lines = ["apple orange banana banana orange"]
+
+    # ding
+    # lines = ["oh you touch my tralala mmm my ding ding dong"]
+
+    # a
+    # lines = ["q w e r t y u i o p", "a s d f g h j k l" "z x c v b n m"]
+
+    print(find_most_frequent_word(lines))
