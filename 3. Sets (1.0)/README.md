@@ -1,0 +1,1 @@
+[Контест №3 для тренировок 1.0 по теме "Множества"](https://contest.yandex.ru/contest/27663/problems/)
