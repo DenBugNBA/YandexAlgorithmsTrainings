@@ -1,4 +1,3 @@
-# from collections import defaultdict
 def create_filled_dict(text):
     letters_count = {}
 
@@ -14,7 +13,6 @@ def find_longest_substring(text, k):
     first_letter = 0
     current_len = 0
 
-    # letters_count = defaultdict(int)
     letters_count = create_filled_dict(text)
 
     right = 0
@@ -35,20 +33,25 @@ def find_longest_substring(text, k):
     return (max_len, first_letter + 1)
 
 
-n, k = map(int, input().split())
-text = input()
+if __name__ == "__main__":
+    n, k = map(int, input().split())
+    text = input()
 
-# k = 1
-# text = "abb"  # 2 1
+    # 2 1
+    # k = 1
+    # text = "abb"
 
-# k = 2
-# text = "ababa"  # 4 1
+    # 4 1
+    # k = 2
+    # text = "ababa"
 
-# k = 1
-# text = "abcdef"  # 6 1
+    # 6 1
+    # k = 1
+    # text = "abcdef"
 
-# k = 3
-# text = "aaaabvdveg"  # 9 2
+    # 9 2
+    # k = 3
+    # text = "aaaabvdveg"
 
-res = find_longest_substring(text, k)
-print(*res)
+    res = find_longest_substring(text, k)
+    print(*res)

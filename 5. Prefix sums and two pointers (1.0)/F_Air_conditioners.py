@@ -45,22 +45,23 @@ def count_minimun_cost(required_powers, optimized_power_costs):
     return cost
 
 
-# n = int(input())
-# required_powers = list(map(int, input().split()))
-# m = int(input())
-# conditioners = []
-# for _ in range(m):
-#     power, price = map(int, input().split())
-#     conditioners.append((power, price))
+if __name__ == "__main__":
+    n = int(input())
+    required_powers = list(map(int, input().split()))
+    m = int(input())
+    conditioners = []
+    for _ in range(m):
+        power, price = map(int, input().split())
+        conditioners.append((power, price))
 
-# required_powers = [800]
-# conditioners = [(800, 1000)]
+    # 1000
+    # required_powers = [800]
+    # conditioners = [(800, 1000)]
 
-required_powers = [1, 2, 3]
-conditioners = [(1, 10), (1, 5), (10, 7), (2, 3)]
+    # 13
+    # required_powers = [1, 2, 3]
+    # conditioners = [(1, 10), (1, 5), (10, 7), (2, 3)]
 
-power_costs = get_power_costs(conditioners)
-# print(power_costs)
-optimized_power_costs = optimize_power_costs(power_costs)
-# print(optimized_power_costs)
-print(count_minimun_cost(required_powers, optimized_power_costs))
+    power_costs = get_power_costs(conditioners)
+    optimized_power_costs = optimize_power_costs(power_costs)
+    print(count_minimun_cost(required_powers, optimized_power_costs))

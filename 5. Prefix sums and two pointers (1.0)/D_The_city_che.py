@@ -10,10 +10,12 @@ def count_couples(distances, r):
     return couples_count
 
 
-n, r = map(int, input().split())
-distances = list(map(int, input().split()))
+if __name__ == "__main__":
+    n, r = map(int, input().split())
+    distances = list(map(int, input().split()))
 
-# r = 4
-# distances = [1, 3, 5, 8]
+    # 2
+    # r = 4
+    # distances = [1, 3, 5, 8]
 
-print(count_couples(distances, r))
+    print(count_couples(distances, r))

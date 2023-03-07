@@ -21,30 +21,35 @@ def find_two_closest_nums(nums1, nums2):
     return nums1[res[0]], nums2[res[1]]
 
 
-# n = int(input())
-# nums1 = list(map(int, input().split()))
-# m = int(input())
-# nums2 = list(map(int, input().split()))
+if __name__ == "__main__":
+    n = int(input())
+    nums1 = list(map(int, input().split()))
+    m = int(input())
+    nums2 = list(map(int, input().split()))
 
-# n = 2
-# nums1 = [3, 4]
-# m = 3
-# nums2 = [1, 2, 3]
+    # 3 3
+    # n = 2
+    # nums1 = [3, 4]
+    # m = 3
+    # nums2 = [1, 2, 3]
 
-# n = 2
-# nums1 = [4, 5]
-# m = 3
-# nums2 = [1, 2, 3]
+    # 4 3
+    # n = 2
+    # nums1 = [4, 5]
+    # m = 3
+    # nums2 = [1, 2, 3]
 
-# n = 5
-# nums1 = [1, 2, 3, 4, 5]
-# m = 5
-# nums2 = [1, 2, 3, 4, 5]
+    # 1 1
+    # n = 5
+    # nums1 = [1, 2, 3, 4, 5]
+    # m = 5
+    # nums2 = [1, 2, 3, 4, 5]
 
-n = 5
-nums1 = [1, 2, 3, 4, 9, 10]
-m = 5
-nums2 = [5, 6, 7, 8, 13, 14]
+    # 4 5
+    # n = 5
+    # nums1 = [1, 2, 3, 4, 9, 10]
+    # m = 5
+    # nums2 = [5, 6, 7, 8, 13, 14]
 
-result = find_two_closest_nums(nums1, nums2)
-print(*result)
+    result = find_two_closest_nums(nums1, nums2)
+    print(*result)
