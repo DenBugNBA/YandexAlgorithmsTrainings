@@ -9,6 +9,8 @@
 
 [Тренировки 2.0](https://yandex.ru/yaintern/algorithm-training_2)
 
+[Мои решения тренировок 3.0 (B)](https://github.com/DenBugNBA/yandex_algorithms_trainings_3)
+
 ## Темы занятий:
 1. Сложность, тестирование, особые случаи
 2. Линейный поиск
